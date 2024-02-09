@@ -1,13 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './elements/Header';
+import Footer from './elements/Footer';
+import { makeStyles } from '@mui/styles';
+import OrderForm from './pages/OrderForm';
 
-function App() {
+const useStyles = makeStyles({
+  wrapper:{
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  body:{
+    minHeight: 500
+  }
+})
+
+const App = () => {
+  const classes = useStyles()
   return (
-    <div >
-      hello world
+    <div className={classes.wrapper}>
+      <Header/>
+      <div className={classes.body}>
+        <OrderForm/>
+      </div>
+      <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
