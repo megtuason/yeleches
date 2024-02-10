@@ -3,14 +3,18 @@ import { makeStyles } from "@mui/styles"
 
 const useStyles = makeStyles({
     wrapper:{
-      outline: '1px dashed green',
+      minHeight: 100,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      color: '#F8F9FA'
     }
   })
 
 const Footer = () => {
     const classes = useStyles()
     return <div className={classes.wrapper}>
-        footer
+        © 2024 Yel's Tres Leches Cakes
     </div>
 }
 export default Footer

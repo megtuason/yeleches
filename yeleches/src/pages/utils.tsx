@@ -1,5 +1,11 @@
 import axios from "axios";
 
+export enum FormSteps {
+    CONTACT_INFO,
+    PAYMENT,
+    CONFIRM
+}
+
 type Payment = 'bpi' | 'gcash' | 'bdo' | ''
 
 export interface Order{

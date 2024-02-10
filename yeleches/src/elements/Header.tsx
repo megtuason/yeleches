@@ -2,7 +2,8 @@ import { makeStyles } from "@mui/styles"
 
 const useStyles = makeStyles({
     wrapper:{
-      outline: '1px dashed red',
+      minHeight: 150,
+      backgroundColor: '#E2D5D2',
     }
   })
 
