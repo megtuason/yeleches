@@ -4,6 +4,8 @@ import Header from './elements/Header';
 import Footer from './elements/Footer';
 import { makeStyles } from '@mui/styles';
 import OrderForm from './pages/OrderForm';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 const useStyles = makeStyles({
   wrapper:{
@@ -18,13 +20,16 @@ const useStyles = makeStyles({
 const App = () => {
   const classes = useStyles()
   return (
-    <div className={classes.wrapper}>
-      <Header/>
-      <div className={classes.body}>
-        <OrderForm/>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <div className={classes.wrapper}>
+        <Header/>
+        <div className={classes.body}>
+          <OrderForm/>
+        </div>
+        <Footer/>
       </div>
-      <Footer/>
-    </div>
+    </LocalizationProvider>
+   
   )
 }
 
