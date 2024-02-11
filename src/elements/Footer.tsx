@@ -8,7 +8,6 @@ const useStyles = makeStyles({
       justifyContent: 'center',
       alignItems: 'center',
       color: '#F8F9FA',
-      backgroundColor: '#3A2D2B',
       fontSize: 14,
     }
   })

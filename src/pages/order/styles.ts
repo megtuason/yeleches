@@ -12,12 +12,17 @@ export const useStyles = makeStyles({
   wrapper: {
     display: 'flex',
     justifyContent: 'center',
+    backgroundColor: '#F8F9FA',
     '& h1': {
-      fontSize: 26,
+      fontSize: 24,
     },
+    '& p':{
+      margin: '25px auto'
+    }
   },
   form:{
     minWidth: '85%',
+    minHeight: '100vh'
   },
   stepBtn: {
     '&.next': {
@@ -41,5 +46,19 @@ export const useStyles = makeStyles({
         minWidth: '100%'
       },
     },
+  },
+  summary:{
+    border: '1px solid #3A2D2B'
+  },
+  products:{
+    width: '80vw',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+  },
+  product:{
+    margin: 10,
+    textAlign: 'center',
   }
+
 });

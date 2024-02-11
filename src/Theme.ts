@@ -22,7 +22,7 @@ const theme = createTheme({
           fontSize: 18,
           color:'#3A2D2B',
           padding: 0,
-          marginTop: 20,
+          margin: '20px 0',
           '&:hover': {
             fontWeight: 'bold',
             backgroundColor: 'transparent !important',
