@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/yeleches/static/css/main.4c881c4f.css",
-    "main.js": "/yeleches/static/js/main.63b5e3eb.js",
+    "main.css": "/yeleches/static/css/main.7d6d7231.css",
+    "main.js": "/yeleches/static/js/main.f2ff234f.js",
+    "static/media/cake.png": "/yeleches/static/media/cake.6b3a05d0f1f4b66a9795.png",
     "index.html": "/yeleches/index.html",
-    "main.4c881c4f.css.map": "/yeleches/static/css/main.4c881c4f.css.map",
-    "main.63b5e3eb.js.map": "/yeleches/static/js/main.63b5e3eb.js.map"
+    "main.7d6d7231.css.map": "/yeleches/static/css/main.7d6d7231.css.map",
+    "main.f2ff234f.js.map": "/yeleches/static/js/main.f2ff234f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c881c4f.css",
-    "static/js/main.63b5e3eb.js"
+    "static/css/main.7d6d7231.css",
+    "static/js/main.f2ff234f.js"
   ]
 }
