@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yeleches/static/css/main.4c881c4f.css",
+    "main.js": "/yeleches/static/js/main.63b5e3eb.js",
+    "index.html": "/yeleches/index.html",
+    "main.4c881c4f.css.map": "/yeleches/static/css/main.4c881c4f.css.map",
+    "main.63b5e3eb.js.map": "/yeleches/static/js/main.63b5e3eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c881c4f.css",
+    "static/js/main.63b5e3eb.js"
+  ]
+}
