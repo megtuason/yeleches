@@ -1,12 +1,12 @@
 import { Formik } from 'formik';
 import { InitialOrder, submitOrder, validateOrder } from './utils';
 import { useState } from 'react';
-import StepButtons from '../components/order/StepButtons';
+import StepButtons from './components/StepButtons';
 import { useStyles } from './styles';
-import OrderDeliveryFields from '../components/order/OrderDeliveryFields';
-import ContactPaymentFields from '../components/order/ContactPaymentFields';
-import Confirmation from '../components/order/Confirmation';
-import OrderSummary from '../components/order/OrderSummary';
+import OrderDeliveryFields from './components/OrderDeliveryFields';
+import ContactPaymentFields from './components/ContactPaymentFields';
+import Confirmation from './components/Confirmation';
+import OrderSummary from './components/OrderSummary';
 import { FormSteps } from './types';
 
 const OrderForm = () => {
@@ -19,7 +19,7 @@ const OrderForm = () => {
         {({ values, handleSubmit, handleChange }) => (
           <form onSubmit={handleSubmit} className={`${classes.column} ${classes.form}`}>
             <p>Thank you for your interest in Yel's Tres Leches Cakes!<br/> Please fill up the information below to place your order  ◡̈ </p>
-            {!! values.order?.length && <OrderSummary order={values.order}/>}
+            <OrderSummary order={values.order}/>
             {formStep === FormSteps.ORDER_DELIVERY && <OrderDeliveryFields handleChange={handleChange} values={values} />}
             {formStep === FormSteps.CONTACT_PAYMENT && <ContactPaymentFields handleChange={handleChange} values={values} />}
             {formStep === FormSteps.CONFIRM && <Confirmation values={values} />}

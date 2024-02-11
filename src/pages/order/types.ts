@@ -24,3 +24,14 @@ export interface OrderItem {
     quantity: number
     size: Size
 }
+
+export interface Product{
+    id: number
+    title: string
+    desc: string
+    prices: ProductPrices
+}
+
+export type ProductPrices = {
+    [key:string]: number
+}

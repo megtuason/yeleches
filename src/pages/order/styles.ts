@@ -48,7 +48,14 @@ export const useStyles = makeStyles({
     },
   },
   summary:{
-    border: '1px solid #3A2D2B'
+    marginBottom: 10,
+    '& ul':{
+      margin: 0,
+      listStyleType: 'none'
+    }
+  },
+  orderDropBtn:{
+    margin: '0 !important'
   },
   products:{
     width: '80vw',
@@ -59,6 +66,15 @@ export const useStyles = makeStyles({
   product:{
     margin: 10,
     textAlign: 'center',
-  }
+    border: '1px solid #3A2D2B',
+    borderRadius: 5,
+    '& p':{
+      marginTop: 10
+    },
+    '& img':{
+      borderTopRightRadius: 5,
+      borderTopLeftRadius: 5,
+    }
 
+  }
 });

@@ -1,6 +1,6 @@
 import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
-import { useStyles } from "../../order/styles";
-import { Order } from "../../order/types";
+import { useStyles } from "../styles";
+import { Order } from "../types";
 
 interface PropTypes {
   handleChange: (e:any) => void;
