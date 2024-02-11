@@ -1,25 +1,5 @@
 import axios from "axios";
-
-export enum FormSteps {
-    ORDER_DELIVERY,
-    CONTACT_PAYMENT,
-    CONFIRM,
-}
-
-type Payment = 'bpi' | 'gcash' | 'bdo' | ''
-
-export interface Order{
-    firstName: string
-    lastName: string
-    phone: string
-    handle: string
-    email: string
-    order: string //temp
-    paymentType: Payment
-    proofOfPayment: string //temp
-    notes: string
-    deliveryDate: Date
-}
+import { Order } from "./types";
 
 export const InitialOrder = {
     firstName: '',
@@ -27,7 +7,7 @@ export const InitialOrder = {
     phone: '',
     handle: '',
     email: '',
-    order: 'test order',
+    order: [],
     paymentType: '',
     proofOfPayment: 'test proof',
     notes: '',
@@ -36,7 +16,6 @@ export const InitialOrder = {
 
 export const validateOrder = (values:Order) =>{
     const errors = {};
-    
     return errors;
 }
 

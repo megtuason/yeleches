@@ -7,24 +7,18 @@ const useStyles = makeStyles({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      textAlign: 'center'
+      textAlign: 'center',
+      color: '#F8F9FA',
+      fontSize: 15
     },
-    circle:{
-      width: 50,
-      height: 50,
-      outline: '1px solid black',
-      borderRadius: 150,
-      marginBottom: 10
-    }
   })
 
   
 const Header = () => {
     const classes = useStyles()
     return <div className={classes.wrapper}>
-        <div className={classes.circle}/>
-        Yel's Tres Leches Cakes <br/>
-        Order Form
+        insert logo here<br/>
+        <h1>Order Form</h1>
     </div>
 }
 export default Header

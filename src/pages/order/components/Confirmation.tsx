@@ -1,5 +1,6 @@
-import { Order } from "./utils";
-import { useStyles } from "./styles";
+
+import { useStyles } from "../styles";
+import { Order } from "../types";
 
 interface PropTypes {
   values: Order;

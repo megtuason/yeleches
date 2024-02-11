@@ -1,7 +1,7 @@
 import { Button } from '@mui/material';
-import { FormSteps } from './utils';
-import { useStyles } from './styles';
+import { useStyles } from '../styles';
 import { ArrowLeftIcon, ArrowRightIcon } from '@mui/x-date-pickers';
+import { FormSteps } from '../types';
 
 interface PropTypes {
   formStep: number;
