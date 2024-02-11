@@ -1,7 +1,6 @@
 import { Button } from '@mui/material';
 import { FormSteps } from './utils';
 import { useStyles } from './styles';
-import { ArrowBackIos, ArrowLeft, ArrowLeftOutlined, ArrowRight, ArrowRightAlt } from '@mui/icons-material';
 import { ArrowLeftIcon, ArrowRightIcon } from '@mui/x-date-pickers';
 
 interface PropTypes {
@@ -12,7 +11,7 @@ const StepButtons: React.FC<PropTypes> = ({ formStep, setFormStep }) => {
   const classes = useStyles();
   return (
     <div className={classes.row}>
-      {formStep !== FormSteps.ORDER && (
+      {formStep !== FormSteps.ORDER_DELIVERY && (
         <Button
           className={classes.stepBtn}
           type="button"
@@ -34,7 +33,9 @@ const StepButtons: React.FC<PropTypes> = ({ formStep, setFormStep }) => {
           Next <ArrowRightIcon />
         </Button>
       ) : (
-        <Button className={classes.stepBtn} type="submit">Submit</Button>
+        <Button className={`${classes.stepBtn} next ${classes.submitBtn}`} type="submit">
+          Submit
+        </Button>
       )}
     </div>
   );

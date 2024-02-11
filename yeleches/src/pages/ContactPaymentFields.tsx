@@ -1,19 +1,19 @@
-import { TextField } from "@mui/material";
+import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import { Order } from "./utils";
 import { useStyles } from "./styles";
+import { DateTimePicker } from "@mui/x-date-pickers";
 
 interface PropTypes {
   handleChange: (e:any) => void;
   values: Order;
 }
-const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
+const ContactPaymentFields: React.FC<PropTypes> = ({ handleChange, values }) => {
   const classes = useStyles();
   return (
     <>
       <h1>Contact Information</h1>
-      <div className={classes.row}>
+      <div className={`${classes.row} ${classes.inputRow}`}>
         <TextField
-          className="input"
           label={"First Name"}
           onChange={handleChange}
           value={values.firstName}
@@ -21,7 +21,7 @@ const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
           required
         />
         <TextField
-          className="input last"
+          className="right"
           label={"Last Name"}
           onChange={handleChange}
           value={values.lastName}
@@ -30,7 +30,6 @@ const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
         />
       </div>
       <TextField
-        className="input"
         label={"Phone Number"}
         onChange={handleChange}
         value={values.phone}
@@ -38,7 +37,6 @@ const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
         required
       />
       <TextField
-        className="input"
         label={"Instagram/Facebook Username"}
         onChange={handleChange}
         value={values.handle}
@@ -46,7 +44,6 @@ const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
         required
       />
       <TextField
-        className="input"
         label={"Email"}
         type="email"
         onChange={handleChange}
@@ -54,7 +51,20 @@ const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
         name="email"
         required
       />
+      <h1>Payment</h1>
+      <InputLabel>Mode of Payment</InputLabel>
+      <Select
+        onChange={handleChange}
+        value={values.paymentType}
+        name="paymentType"
+        required
+      >
+        <MenuItem value="bpi">BPI</MenuItem>
+        <MenuItem value="bdo">BDO</MenuItem>
+        <MenuItem value="gcash">GCash</MenuItem>
+      </Select>
+      
     </>
   );
 };
-export default ContactInfoFields;
+export default ContactPaymentFields;

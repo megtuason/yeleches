@@ -5,7 +5,7 @@ interface PropTypes {
   handleChange: (e: any) => void;
   values: Order;
 }
-const OrderItems: React.FC<PropTypes> = ({ handleChange, values }) => {
+const OrderDeliveryFields: React.FC<PropTypes> = ({ handleChange, values }) => {
   const classes = useStyles();
   return (
     <>
@@ -13,4 +13,4 @@ const OrderItems: React.FC<PropTypes> = ({ handleChange, values }) => {
     </>
   );
 };
-export default OrderItems;
+export default OrderDeliveryFields;

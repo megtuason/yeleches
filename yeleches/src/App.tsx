@@ -4,33 +4,28 @@ import Header from './elements/Header';
 import Footer from './elements/Footer';
 import { makeStyles } from '@mui/styles';
 import OrderForm from './pages/OrderForm';
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 const useStyles = makeStyles({
-  wrapper:{
+  wrapper: {
     display: 'flex',
     flexDirection: 'column',
   },
-  body:{
-    minHeight: '100vh'
-  }
-})
+  body: {
+    minHeight: '100vh',
+  },
+});
 
 const App = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <div className={classes.wrapper}>
-        <Header/>
-        <div className={classes.body}>
-          <OrderForm/>
-        </div>
-        <Footer/>
+    <div className={classes.wrapper}>
+      <Header />
+      <div className={classes.body}>
+        <OrderForm />
       </div>
-    </LocalizationProvider>
-   
-  )
-}
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

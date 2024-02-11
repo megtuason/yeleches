@@ -9,36 +9,37 @@ export const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
   },
-  form: {
-    // margin: '0 15px',
-    outline: '1px dashed red'
-  },
   wrapper: {
     display: 'flex',
     justifyContent: 'center',
-    outline: '1px solid black',
     '& h1': {
       fontSize: 26,
     },
-    '& .input': {
-      backgroundColor: '#F8F9FA',
-      margin: '10px 0',
-      borderRadius: 3,
-    },
-    '& .input.last': {
-      marginLeft: 30,
-    },
-    
   },
-  stepBtn:{
-    color: '#3A2D2B !important',
-    fontSize: '18px !important',
-    '&.next':{
-      marginLeft:'auto'
-    },
-    "&:hover":{
-      fontWeight: 'bold',
-      backgroundColor: 'transparent !important',
-    }
+  form:{
+    minWidth: '85%',
   },
+  stepBtn: {
+    '&.next': {
+      marginLeft: 'auto',
+    },
+  },
+  submitBtn:{
+    border: '1px solid #3A2D2B !important',
+    padding: '5px 10px !important',
+  },
+  inputRow:{
+    '& div':{
+      minWidth: '48%'
+    },
+    '& .right':{
+      marginLeft: 'auto'
+    },
+    "@media (max-width: 500px)": {
+      flexDirection:'column',
+      '& div':{
+        minWidth: '100%'
+      },
+    },
+  }
 });
