@@ -1,7 +1,7 @@
 {
   "name": "yeleches",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://megtuason.github.io/yeleches",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -28,7 +28,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
