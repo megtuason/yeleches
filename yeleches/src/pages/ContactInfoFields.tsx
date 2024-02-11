@@ -1,6 +1,6 @@
 import { TextField } from "@mui/material";
-import { useStyles } from "./OrderForm";
 import { Order } from "./utils";
+import { useStyles } from "./styles";
 
 interface PropTypes {
   handleChange: (e:any) => void;
@@ -10,6 +10,7 @@ const ContactInfoFields: React.FC<PropTypes> = ({ handleChange, values }) => {
   const classes = useStyles();
   return (
     <>
+      <h1>Contact Information</h1>
       <div className={classes.row}>
         <TextField
           className="input"

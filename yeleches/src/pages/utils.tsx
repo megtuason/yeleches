@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export enum FormSteps {
+    ORDER,
     CONTACT_INFO,
     PAYMENT,
     CONFIRM

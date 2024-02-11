@@ -1,7 +1,7 @@
 import { InputLabel, MenuItem, Select, TextField } from "@mui/material";
-import { useStyles } from "./OrderForm";
 import { Order } from "./utils";
 import { DateTimePicker } from "@mui/x-date-pickers";
+import { useStyles } from "./styles";
 
 interface PropTypes {
   handleChange: (e: any) => void;

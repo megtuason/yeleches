@@ -13,7 +13,6 @@ const useStyles = makeStyles({
     flexDirection: 'column',
   },
   body:{
-    backgroundColor: '#E2D5D2',
     minHeight: '100vh'
   }
 })

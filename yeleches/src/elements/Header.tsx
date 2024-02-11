@@ -2,8 +2,16 @@ import { makeStyles } from "@mui/styles"
 
 const useStyles = makeStyles({
     wrapper:{
-      minHeight: 150,
-      backgroundColor: '#E2D5D2',
+      margin: 15,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    circle:{
+      width: 50,
+      height: 50,
+      outline: '1px solid black',
+      borderRadius: 150
     }
   })
 
@@ -11,7 +19,7 @@ const useStyles = makeStyles({
 const Header = () => {
     const classes = useStyles()
     return <div className={classes.wrapper}>
-        header
+        <div className={classes.circle}/>
     </div>
 }
 export default Header

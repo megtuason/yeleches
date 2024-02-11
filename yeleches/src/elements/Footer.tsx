@@ -3,11 +3,13 @@ import { makeStyles } from "@mui/styles"
 
 const useStyles = makeStyles({
     wrapper:{
-      minHeight: 100,
+      minHeight: 80,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      color: '#F8F9FA'
+      color: '#F8F9FA',
+      backgroundColor: '#3A2D2B',
+      fontSize: 14,
     }
   })
 
