@@ -20,7 +20,7 @@ const OrderDeliveryFields: React.FC<PropTypes> = ({ handleChange, values }) => {
       setProductEditing(null)
     }
   };
-  console.log(productEditing)
+  
   useEffect(() => {
     document.addEventListener('mousedown', handleClickEvent);
   }, []);
